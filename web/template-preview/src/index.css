@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+}
+
+.label-float input {
+  width: 100%;
+  background-color: #ECE5DD;
+  padding: 15px 20px;
+  font-size: 16px;
+  border: 1px solid #128c7e;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.1s linear;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.label-float input:focus {
+  border: 2px solid #128c7e;
+}
+
+.label-float input::placeholder {
+  color: transparent;
+}
+
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 15px;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  background-color: #ECE5DD;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.label-float input:required:invalid + label {
+  color: red;
+}
+
+.label-float input:focus:required:invalid {
+  border: 2px solid red;
+}
+
+.label-float input:required:invalid + label:before {
+  content: "*";
+}
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  font-size: 14px;
+  top: 0;
+  color: #128c7e;
+}

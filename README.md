@@ -2,6 +2,8 @@
 
 This repository contains a solution to the "WhatsApp Template Message Preview System" challenge. The system consists of two main components: a backend API built with Python and FastAPI, and a frontend interface built with React and TypeScript. Additionally, a MongoDB database is set up using Docker to store the template data used by the backend.
 
+![2024-11-1712-01-52-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/9eae1ddf-1664-4875-a04b-92c354499a30)
+
 ## Project Structure
 
 The project is organized as follows:
